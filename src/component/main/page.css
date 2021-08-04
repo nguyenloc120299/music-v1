@@ -1,0 +1,20 @@
+.page-music{
+    margin-top: 70px;
+    
+}
+.page-music .title{
+    display: flex;
+    justify-content: space-around;
+}
+.page-music .title select{
+    border: none;   
+    outline: none;
+    background: #aaa;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+}
+.page-music .title option:hover{
+    background: teal;
+}

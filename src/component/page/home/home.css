@@ -1,0 +1,353 @@
+.home{
+   
+    display: flex;
+    flex-wrap: wrap;
+   position: relative;
+}
+.home-slider{
+    position: relative;
+    width: 100%;
+    margin: 10px;
+    overflow: hidden;
+    
+}
+.home .slider{
+    display: flex;
+   width: 100%;
+   max-height: 500px;
+   overflow: hidden;
+}
+.home .slider .card{
+    min-width: 25%;
+    border-radius: 10px;
+    max-height: 500px;
+  margin: 10px;
+    position: relative;
+   
+    background: #999;
+    overflow: hidden;
+ 
+}
+
+.slider .card img{
+   border-radius: 10px;
+   width: 100%;
+    object-fit: cover;
+   height: 100%;
+
+}
+.slider .card .des-slide{
+    position: absolute;
+   bottom:0;
+    left:0;
+    background: white;
+    width: 100%;
+    opacity: 0.5;
+
+}
+.slider .card .des-slide h4{
+    color: black;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    padding: 10px;
+    text-align: left;
+
+} 
+.slider .card .des-slide h5{
+    padding: 10px;
+    text-align: left;
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+    color: #222;
+}
+.card .play-audio{
+    position: absolute;
+    top: 0;
+    left: 45%;
+    top: 40%;
+    font-size: 50px;
+    color:  rgb(114,0,161);
+    transition: all 1s linear;
+    background: white;
+    border-radius: 50%;
+    padding: 8px 16px;
+    opacity: 0.5;
+
+
+}
+
+.left-slide,.right-slide{
+    position: absolute;
+    top: 50%;
+
+    border-radius: 50%;
+
+    font-size: 40px;
+    color: #aaa;
+    opacity: 0.6;
+}
+.left-slide{
+    left: 0;
+    padding: 10px;
+}
+.left-slide:hover,.right-slide:hover{
+    color: goldenrod;
+}
+.right-slide{
+    right: 0;
+}
+.home .audio{
+    z-index: 99999;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    border-radius: 5px;
+    bottom: 0%;
+    padding: 10px;
+    background: #170f23;
+    height: 100px    ;
+    box-shadow: 0 0 6px #120C1A;
+    justify-content: space-around;
+    opacity: 0.75;
+    
+}
+.home .audio .close-audio{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    padding:4px 8px;
+    border-radius: 50%;
+    top: -7px;
+    font-size: 17px;
+    background: teal;
+    right: -5px;
+    cursor: pointer;
+}
+.home .audio .img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    animation:  xoayvong 2s linear 0s infinite;
+    margin-right: 30px;
+  
+}
+.home .audio .info{
+    display: flex;
+    margin: auto;
+    color: white;   
+}
+.home .audio .des-info h4,.home .audio .des-info h5{
+   margin: auto;
+   text-align: center;
+  
+}
+.home .audio .info .times-audio{
+    margin-left: 30px;
+}
+.home .audio .info .audio-isplay{
+    margin-left: 20px;
+    color:white;
+    font-size: 20px;
+    display: flex;
+    
+
+}
+.home .audio .info .audio-isplay .play--music{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+}
+@keyframes xoayvong{
+    from{
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+    }
+}
+@keyframes xoay{
+    from{
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+    }
+}
+/* --------------Lien quan--------------------- */
+.Lien-quan{
+    display: flex;
+    width: 100%;
+    height:100%;
+    flex-wrap:wrap ;
+    overflow: hidden;
+}
+
+.Lien-quan .nhac{
+    margin: auto;
+    width:280px;
+    border-radius: 5px;
+    height: 400px;
+}
+
+.Lien-quan .nhac img{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.Lien-quan .nhac a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #999;
+    font-weight: bold;
+}
+.Lien-quan .nhac a:hover{
+    color: #666;
+}
+.Lien-quan .nhac img:hover{
+    height: 330px;
+    
+}
+
+@media (max-width : 720px) {
+    .home .slider .card{
+        min-width: 100%;
+        margin: 0;
+    }
+    .Lien-quan .nhac{
+        width: 100%;
+        margin: 10px;
+    }
+   
+}
+
+
+.landing{
+    width: 100%;
+    height: 90vh;
+    min-height: 500px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.3s linear;
+    overflow: hidden;
+
+}
+.landing img{
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    
+}
+.landing .info{
+    opacity: 0.9;
+    position: absolute;
+    left: 44%;
+   bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+}
+
+
+.landing .info span{
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.landing .info a{
+    text-decoration: none;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 0 0 10px #999;
+    border: transparent;
+    padding: 20px 20px;
+    text-transform: capitalize;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+  
+}
+
+@media (max-width:550px){
+    .landing{
+        width: 100%;
+        height: 300px;
+    }
+    .landing .info{
+        left: 20%;
+    }
+}
+
+/* --------------kham pha----------------------- */
+.kham-pha{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.nhac-khamPha{
+    margin: 10px;
+    width: 30%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nhac-khamPha img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.nhac-khamPha .des-kp{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    text-decoration: none;
+    width: 100%;
+    height: 70%;
+
+    background: wheat;
+    opacity: 0.7;
+    padding-top: 100px;
+    color: teal;
+    font-weight: bold;
+    transition: all 0.5s ease-out;
+
+}
+.nhac-khamPha .des-kp a{
+    background: rgb(114,0,161);
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    
+}
+
+@media (max-width: 720px){
+    .nhac-khamPha{
+        width: 100%;
+    }
+    .home .audio .audio-isplay{
+        margin-right: 30px;
+        position: absolute;
+        left: 47%;
+        top: 0;
+        
+    }
+}

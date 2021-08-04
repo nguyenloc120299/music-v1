@@ -1,0 +1,70 @@
+.topbar{
+    height: 50px;
+    background: #170f23;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+    opacity: .6;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.topbar .logo a{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.topbar .logo h3{
+    font-family: 'Style Script', cursive;
+    font-size: 22px ;
+
+}
+.topbar .logo h3::first-letter{
+    font-size: 40px;
+}
+.topbar ul li{
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+   
+}
+.topbar ul li a{
+    color: white;
+  
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+.topbar .close-topbar{
+    display: none;
+    font-size: 30px;
+}
+
+@media (max-width:720px){
+    .topbar{
+        justify-content: space-around;
+    }
+    .topbar ul{
+        position: fixed;
+        left:-100% ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 70%;
+        background: #170f23;
+      transition: all 0.5s linear;
+     
+    }
+    .topbar .close-topbar{
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        z-index: 9999;
+    }
+}
